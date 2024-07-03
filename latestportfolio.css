@@ -93,6 +93,7 @@ p {
            gap: 10px;
            width: 100%;
            max-width: 1500px;
+           justify-content: center;
          }
     
          .zoom-containeer {
