@@ -201,7 +201,6 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow: auto;
-    margin-left: -50px;
 }
 
 .li-row {
