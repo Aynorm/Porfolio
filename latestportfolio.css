@@ -3,6 +3,7 @@
   .intro {
     font-size: 29px;
   }
+  
   .mini-on-screen {
     font-size: 12px ;
   }
@@ -11,7 +12,8 @@
     text-align: center;
     justify-content: center;
   }
-  p, h2, h3, h1 {color: beige;}
+  
+  p, h2, h3, h1 {color: white;}
 }
 
 /* width */
@@ -59,11 +61,32 @@
   padding: 10px;
 }
 
+.learn-portfolio {
+  color: gray;
+  font-weight: 700;
+}
+
 .background-img {
 background-image: url(pictures/DSC_06591.jpg);
 background-size: 100%;
 background-repeat: no-repeat;
 border-radius: 10px;
+}
+
+.me-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 160px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-child-container {
+  flex-grow: 1;
+  flex-basis: 200;
+  width: 100%;
+  max-width: 500px;
 }
 
 body {
@@ -79,6 +102,11 @@ a {
   color: white;
   font-size: 16px;
   letter-spacing: .06em;
+  text-decoration: none;
+  font-weight: 700;
+}
+a:hover {
+  color: gray
 }
 p {
   font-size: 18px;
@@ -90,7 +118,7 @@ p {
          .container-port {
            display: flex;
            flex-wrap: wrap;
-           gap: 10px;
+           column-gap: 160px;
            width: 100%;
            max-width: 1500px;
            justify-content: center;
@@ -199,8 +227,9 @@ p {
 .head-ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
     overflow: auto;
+    
 }
 
 .li-row {
@@ -288,6 +317,7 @@ span {
 
 .number-p {
   margin: 0%;
+  font-size: 40px;
 }
 
 img {
@@ -353,6 +383,7 @@ img {
 .img-item { 
   width: 100%;
   border-radius: 5%;
+  
 }
 
 
