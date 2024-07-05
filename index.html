@@ -9,8 +9,9 @@
   </head>
   <body>
     <div style="display: flex; align-items: center">
-      <div><img src="pictures/logo.png" width="100%" alt="logo" /></div>
-
+      <div>
+        <img src="pictures/logo.png" width="100%" alt="logo" />
+      </div>
       <ul class="head-ul">
         <li class="li-row"><a class="link" href="#">Home</a></li>
         <li class="li-row"><a class="link" href="#">About</a></li>
@@ -52,7 +53,7 @@
           Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis
           ullamcorper quis id elementum convallis lacus gravida.
         </p>
-        <a href="#">LEARN MORE</a>
+        <a class="learn-portfolio" href="#">LEARN MORE</a>
       </div>
       <div class="test glass-background change">
         <h3 class="f-mobile">MY WORK</h3>
@@ -60,7 +61,7 @@
           Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis
           ullamcorper quis id elementum convallis lacus gravida.
         </p>
-        <a href="#">BROWSE PORTFOLIO</a>
+        <a class="learn-portfolio" href="#">BROWSE PORTFOLIO</a>
       </div>
       <div style="padding-bottom: 60px" class="test glass-background change">
         <h3 class="f-mobile">FOLLOW ME</h3>
@@ -106,7 +107,7 @@
     </div>
 
     <br />
-    <div style="background-color: transparent; padding: 10px">
+    <!--<div style="background-color: transparent; padding: 10px">
       <div style="display: flex; gap: 5px; flex-wrap: wrap">
         <div class="test glass-background" style="width: 100%; height: 100%">
           <h3><span style="color: orange">/</span>ABOUT ME</h3>
@@ -206,7 +207,104 @@
         </ul>
       </div>
     </div>
-    <br />
+    <br />-->
+
+    <div class="me-container">
+      <div class="me-child-container">
+        <span style="color: orange">/</span>ABOUT ME
+        <h1 class="intro">I’ve been developing websites since 2018</h1>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+        </p>
+        <a href="#">More about me</a>
+      </div>
+
+      <div class="me-child-container">
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center"
+        >
+          <div
+            style="display: flex; align-items: center"
+            class="years-expireince"
+          >
+            <div style="font-size: 70px; font-weight: 700; margin-right: 2px">
+              10
+            </div>
+            <div style="font-weight: 700">Years experience</div>
+          </div>
+
+          <div
+            style="display: flex; align-items: center"
+            class="years-expireince"
+          >
+            <div style="font-size: 70px; font-weight: 700; margin-right: 2px">
+              150
+            </div>
+            <div style="font-weight: 700">Successful projects</div>
+          </div>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+      "
+    >
+      <h3 class="mini-on-screen" style="width: 100%">PREVIOUSLY WORKED ON</h3>
+      <ul
+        style="
+          display: flex;
+          gap: 10%;
+          overflow: auto;
+          width: 100%;
+          background-color: transparent;
+          border-radius: 20px;
+          margin-left: 5px;
+        "
+      >
+        <li>
+          <img
+            class="img-pre-work"
+            src="pictures/Photoshop-logo.png"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            class="img-pre-work"
+            src="pictures/illostrator-logo.png"
+            alt="illustrator"
+          />
+        </li>
+        <li>
+          <img
+            class="img-pre-work"
+            src="pictures/adobe-logo1.png"
+            alt="adobe"
+          />
+        </li>
+        <li>
+          <img
+            class="img-pre-work"
+            src="pictures/Photoshop-logo.png"
+            alt="web"
+          />
+        </li>
+      </ul>
+    </div>
 
     <div style="background-color: rgba(11, 28, 54, 0.4); padding: 10px">
       <div style="background-color: transparent">
@@ -290,7 +388,7 @@
     <br />
 
     <div class="container-port">
-      <div class="zoom-container">
+      <div style="margin-bottom: 30px" class="zoom-container">
         <h3><span style="color: orange">/</span>MY PORTFOLIO</h3>
         <h1 class="intro project-have-done">
           Take a look at the latest projects I’ve done
@@ -359,20 +457,29 @@
             margin-top: -40px;
           "
         >
-          <div><h1 class="intro">What the clients say about my work</h1></div>
-          <div>
-            <a href="#"><p>Get in touch</p></a>
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              width: 100%;
+            "
+          >
+            <h1 style="max-width: 1050px" class="intro">
+              What the clients say about my work
+            </h1>
+            <a href="#"
+              ><p style="font-weight: 700; margin-left: auto">
+                Get in touch
+              </p></a
+            >
           </div>
         </div>
       </div>
 
       <div class="tainer" style="display: flex; flex-wrap: wrap; gap: 10px">
         <div class="item-one">
-          <img
-            class="img-item"
-            src="pictures/mariam.JPG"
-            alt="client"
-          />
+          <img class="img-item" src="pictures/mariam.JPG" alt="client" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis
             ullamcorper quis id elementum convallis lacus gravida.
@@ -430,6 +537,15 @@
         "
         class="interested"
       >
+        <div
+          class="white-top"
+          style="
+            width: 100px;
+            height: 5px;
+            background-color: whitesmoke;
+            margin-bottom: 5px;
+          "
+        ></div>
         <h1 class="intro">Interested in working together? Let’s talk</h1>
       </div>
 
