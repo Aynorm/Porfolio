@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Airdrop</title>
+    <style>
+      .first-container {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        align-items: center;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .second-container {
+        display: grid;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        height: 100%;
+      }
+      .third-container {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .fourth-container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .dollar-btc-currency {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+      }
+      .crypto-price {
+      }
+      img {
+        width: 25px;
+      }
+      button {
+        width: 90px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: #171717;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        cursor: pointer;
+      }
+      body {
+        background-color: rgb(228, 224, 224);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body onload="checkCookie()">
+    <script src="https://public.bnbstatic.com/unpkg/growth-widget/cryptoCurrencyWidget@0.0.9.min.js"></script>
+
+    <div
+      style="
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+      "
+      class="binance-widget-marquee"
+      data-cmc-ids="1,1027,1839,5426,52,3408,5805,74,3890,7083"
+      data-theme="dark"
+      data-transparent="false"
+      data-locale="en"
+      data-powered-by="Sponsored"
+      data-disclaimer="Disclaimer"
+    ></div>
+    <br />
+    <div class="first-container">
+      <div style="display: flex; align-items: center">
+        <img
+          style="width: 50px; margin-right: 10px"
+          src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7912768/avatar-icon-md.png"
+          alt="profile"
+        />
+        <p class="username"><span>Hi,</span><span> User</span></p>
+      </div>
+      <div>
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhxVsPkFr-kVuj0gns-6qoywAVyv8ggetnjVUoVxYRAbB3T65XxBPb4PlECSw7Pdhi8OIbj7vvMTudAG1f0LkzA8Xtxve5zMot2m6NrLzSrtao4Utej3Zt7CYFlNNAFvAZTzOZiwZc2kCL9ohWbIFi2SbCqMjP88-gYZYnlzWNK45VX6LLo8_6L-Secz8/s320/noti.png"
+          alt="notification"
+        />
+      </div>
+    </div>
+    <br />
+
+    <div
+      style="
+        background-color: rgb(230, 230, 114);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      "
+      class="dollar-balance-container"
+    >
+      <p>USDT Balance</p>
+
+      <div class="dollar-btc-currency">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-IWnCr9-vJz1v-IVXaaQwMOO5Ggs5b8PCLL41S6-aFBD3jj4RZq7trPnyXKCp5HMTuGM4PJ-PhMRenldImLADyeSRAmhnQ15SMh6Z82JMzyvOvLQnuQRK5gkLMvrkkg5JsPaa7IyadHxQUllhAjSFDcBu_edL07rBMgxCD-csHbRcAo5EaaWMuwynwKM/s1600/KTF6M73FKBACNI5JQ4S3EW7MRI.png"
+          alt="usdt-icon"
+        />
+        <h3
+          id="dnormo"
+          style="display: flex; background-color: aquamarin; max-width: 100%"
+        >
+          0.00000
+        </h3>
+      </div>
+      <button style="margin-top: 5px" onclick="clickDouble()" type="button">
+        Claim
+      </button>
+    </div>
+    <div
+      style="
+        background-color: rgb(171, 126, 212);
+        padding: 20px;
+        border-radius: 10px;
+      "
+      class="dollar-balance-container"
+    >
+      <p>Bitcoin Balance</p>
+      <div class="dollar-btc-currency">
+        <img
+          src="https://blogger.googleusercontent.com/img/a/AVvXsEgw5sIulHZ5MxdR4RWt3QM3vRW5VAFTqQNVM8cFZZBPjJ-jtWJYDh_eqAszyZfNbK8CHDEkEswFGWDc-04NjhqxwyzRdT5kqMI9u-1Wbkr0aBw12XOxTdiCKdvahT82U-luCxOh3JjOmlxYlXLQVxaE6mt1bOfp_4davh-KtMsDlr4Lq9hPvqUsHAwI5Rc=w400-h400"
+          alt="btc-icon"
+        />
+        <h3 id="normo">0.00000</h3>
+      </div>
+
+      <button style="margin-top: 5px" onclick="clickCounter()" type="button">
+        Claim
+      </button>
+    </div>
+    <br />
+
+    <br />
+
+    <div class="third-container" style="display: flex; gap: 20%">
+      <div>
+        <p>
+          Enjoy 2.25GB + 10minutes for #1,000, you get 1.5gb + 10mins & amp;
+          Extra 750MB
+        </p>
+      </div>
+      <div>
+        <button>Boost</button>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="fourth-container">
+      <div style="display: flex; gap: 20%; align-items: center">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-IWnCr9-vJz1v-IVXaaQwMOO5Ggs5b8PCLL41S6-aFBD3jj4RZq7trPnyXKCp5HMTuGM4PJ-PhMRenldImLADyeSRAmhnQ15SMh6Z82JMzyvOvLQnuQRK5gkLMvrkkg5JsPaa7IyadHxQUllhAjSFDcBu_edL07rBMgxCD-csHbRcAo5EaaWMuwynwKM/s1600/KTF6M73FKBACNI5JQ4S3EW7MRI.png"
+          alt="dollar"
+        />
+        <div style="align-items: center; width: 70px; background-color: green">
+          <p>Minimum Withdrawal</p>
+          <h3 style="margin-top: -5px">10.00</h3>
+        </div>
+
+        <button>Withdraw</button>
+      </div>
+
+      <div style="display: flex; gap: 20%; align-items: center">
+        <img
+          src="https://blogger.googleusercontent.com/img/a/AVvXsEgw5sIulHZ5MxdR4RWt3QM3vRW5VAFTqQNVM8cFZZBPjJ-jtWJYDh_eqAszyZfNbK8CHDEkEswFGWDc-04NjhqxwyzRdT5kqMI9u-1Wbkr0aBw12XOxTdiCKdvahT82U-luCxOh3JjOmlxYlXLQVxaE6mt1bOfp_4davh-KtMsDlr4Lq9hPvqUsHAwI5Rc=w400-h400"
+          alt="btc"
+        />
+        <div style="align-items: center; width: 70px; background-color: red">
+          <p>Minimum Withdrawal</p>
+          <h3 style="margin-top: -5px">0.0000572</h3>
+        </div>
+        <button>Withdraw</button>
+      </div>
+    </div>
+
+    <script>
+      //For btc claim counter
+      clickCounter();
+
+      function clickCounter() {
+        if (localStorage.clickcount) {
+          localStorage.clickcount =
+            Number(localStorage.clickcount) + 0.000000097;
+        } else {
+          localStorage.clickcount = 0.000001;
+        }
+        document.getElementById("normo").innerHTML = localStorage.clickcount;
+      }
+    </script>
+
+    <script>
+      //Dollar Counter
+      clickDouble();
+
+      function clickDouble() {
+        if (localStorage.clickcount) {
+          localStorage.clickcount =
+            Number(localStorage.clickcount) + 0.000000097;
+        } else {
+          localStorage.clickcount = 0.000001;
+        }
+        document.getElementById("dnormo").innerHTML = localStorage.clickcount;
+      }
+    </script>
+
+    <script>
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(";");
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == " ") {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+      function checkCookie() {
+        let user = getCookie("username");
+        if (user != "") {
+          alert("Welcome again " + user);
+        } else {
+          user = prompt("Please enter your name:", "");
+          if (user != "" && user != null) {
+            setCookie("username", user, 30);
+          }
+        }
+      }
+    </script>
+
+    <script>
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(";");
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == " ") {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+      function checkCookie() {
+        let user = getCookie("username");
+        if (user != "") {
+          alert("Welcome again " + user);
+        } else {
+          user = prompt("Please enter your name:", "");
+          if (user != "" && user != null) {
+            setCookie("username", user, 30);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -106,14 +106,13 @@ a {
   font-size: 16px;
   letter-spacing: .06em;
   text-decoration: none;
-  font-weight: 700;
 }
+
 a:hover {
   color: gray
 }
 p {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
   letter-spacing: .06em;
 
 }
@@ -132,8 +131,7 @@ p {
          .zoom-containeer {
            flex-grow: 1;
            flex-basis: 200;
-           width: 100%;
-           max-width: 500p; 
+           width: auto;
          }
     
          .zoom-one {
@@ -216,16 +214,17 @@ p {
 }
 
 .input-contact {
-  height: 40px;
+  height: 100px;
   background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color: whitesmoke ;
+  border-bottom-color:white ;
   margin-top: 10px;
-  padding-left: 10px;
   text-align: justify;
   color: white;
+  font-size: 24px;
+  padding: 0 0 0 0;
 }
 
 .head-ul {

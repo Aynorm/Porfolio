@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* this is about css start */
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 700px) {
+        .intro {
+          font-size: 29px;
+        }
+
+        .mini-on-screen {
+          font-size: 12px;
+        }
+        .mini-mobile {
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+        }
+
+        p,
+        h2,
+        h3,
+        h1 {
+          color: white;
+        }
+      }
+
+      body {
+        background-color: #13111c;
+        color: white;
+        font-family: Spacegrotesk, sans-serif;
+        letter-spacing: 0.06em;
+      }
+      .second-story-img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 20px;
+      }
+      h1 {
+        font-size: 50px;
+        width: auto;
+        font-weight: 600;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 30px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      span {
+        color: orange;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .h3-skills-color-fade {
+        color: gray;
+      }
+
+      .collab-img {
+        width: 150px;
+        margin-bottom: 30px;
+      }
+
+      .work-with-img {
+        width: 100px;
+        margin-top: 20px;
+      }
+
+      .my-passport {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 50%;
+      }
+
+      .aboutme-container,
+      .mystory-container,
+      .sskills-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .aboout-me-years-experience-span {
+        font-weight: 700;
+        font-size: 30px;
+      }
+      .about-me-years-exp-div {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        flex-basis: 200;
+        max-width: 200px;
+        margin-bottom: -20px;
+      }
+
+      .about-me-years-experience-paragraph {
+        margin-left: 5px;
+        font-weight: 700;
+        font-size: large;
+      }
+      .aboutme-subcontainer,
+      .mystory-div,
+      .sskills-inner {
+        flex-grow: 1;
+        flex-basis: 200;
+        width: auto;
+      }
+
+      .mystory-div {
+        max-width: 500px;
+        width: auto;
+      }
+      .about-experience-container,
+      .past-education-container,
+      .past-education-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+        align-items: center;
+        justify-content: center;
+      }
+      .about-experience-div,
+      .past-education-div,
+      .mini-past-education-div {
+        flex-grow: 1;
+        flex-basis: 200;
+        width: 100;
+        max-width: auto;
+      }
+
+      .about-experience-paragraph {
+        width: 100%;
+        max-width: 700px;
+      }
+
+      .about-me-gen-max-width-div {
+        max-width: 500px;
+      }
+
+      .discover-div {
+        background-color: #2d343f;
+        width: 100%;
+        max-width: 306px;
+        min-width: 300px;
+        max-height: 354px;
+        padding: 120px 40px 88px;
+        border-radius: 20px;
+      }
+
+      .discover-div:hover {
+        -ms-transform: scale(1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1);
+        /* Safari 3-8 */
+        transform: scale(1.06);
+        color: gray;
+      }
+
+      .discover-img {
+        width: 70px;
+      }
+
+      .discover-paragraph {
+        margin-bottom: 50px;
+      }
+      /* this is about css end */
+    </style>
+  </head>
+  <body>
+    <div class="aboutme-container">
+      <div class="aboutme-subcontainer" style="max-width: 500px; width: 100%">
+        <div
+          class="white-top"
+          style="
+            width: 100px;
+            height: 5px;
+            background-color: whitesmoke;
+            margin-bottom: 5px;
+          "
+        ></div>
+        <h1 class="intro">Nice to meet you, I’m Taleeb Ayobami</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit fames turpis
+          pretium bibendum nisl est sagittis aliquam pretium nunc curabitur
+          magna est in nulla id volutpat et venenatis at lacus.
+        </p>
+        <hr />
+        <div style="display: flex; flex-wrap: wrap">
+          <div class="about-me-years-exp-div">
+            <p class="aboout-me-years-experience-span">12<span>+</span></p>
+            <p class="about-me-years-experience-paragraph">
+              Years of experience
+            </p>
+          </div>
+          <div class="about-me-years-exp-div">
+            <p class="aboout-me-years-experience-span">150<span>+</span></p>
+            <p class="about-me-years-experience-paragraph">
+              Successful projects
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutme-subcontainer" style="max-width: 500px">
+        <img class="my-passport" src="pictures/ay passport.jpg" alt="mypic" />
+      </div>
+    </div>
+
+    <br />
+
+    <div
+      class="mystory-container"
+      style="background-color: rgb(33, 40, 51, 0.2); border-radius: 20px"
+    >
+      <div class="mystory-div">
+        <h3><span>/</span>MY STORY</h3>
+        <h1 class="intro">My first website design back in 2001</h1>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+        </p>
+        <img
+          class="second-story-img"
+          src="pictures/story image.jpeg"
+          alt="story"
+        />
+      </div>
+      <div class="mystory-div">
+        <h3><span>/</span>MY STORY</h3>
+        <h1 class="intro">How I started as a web developer</h1>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+        </p>
+        <img
+          class="second-story-img"
+          src="pictures/story image1.jpeg"
+          alt="story"
+        />
+      </div>
+    </div>
+
+    <br />
+
+    <div style="background-color: rgba(11, 28, 54); padding: 20px">
+      <div>
+        <h3><span>/</span>MY EXPERIENCE</h3>
+        <div
+          style="
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 20px;
+          "
+        >
+          <h1 class="intro" style="max-width: 90%">
+            Over 10 years of experience and 100+ projects
+          </h1>
+          <a href=""
+            ><p>Get in touch <span class="right-arrow"> →</span></p></a
+          >
+        </div>
+      </div>
+
+      <br />
+      <hr />
+
+      <div class="sskills-container">
+        <div class="sskills-inner">
+          <h3 class="h3-skills-color-fade">SKILL SET</h3>
+          <h2>HTML & CSS</h2>
+          <h2>Javascript</h2>
+          <h2>React JS</h2>
+        </div>
+
+        <div class="sskills-inner">
+          <h3 class="h3-skills-color-fade">AWWARDS</h3>
+          <h2>Best Website of 2022</h2>
+          <h2>AWWW Website Award</h2>
+          <h2>Innovative Developer 2019</h2>
+        </div>
+
+        <div class="sskills-inner">
+          <h3 class="h3-skills-color-fade">TOP CLIENTS</h3>
+          <h2>Venture</h2>
+          <h2>Agency</h2>
+          <h2>Studio</h2>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div
+      style="
+        background-color: #2d343f;
+        align-items: center;
+        text-align: center;
+        padding: 70px 20px 70px 20px;
+        border-radius: 28px;
+      "
+    >
+      <h3><span>/</span>MY PAST CLIENTS</h3>
+      <div>
+        <h1 class="intro">Brand & companies I have collaborated with</h1>
+      </div>
+      <div>
+        <img class="collab-img" src="pictures/organization.svg" alt="collab" />
+        <img class="collab-img" src="pictures/studio.svg" alt="collab" />
+        <img class="collab-img" src="pictures/enterprise.svg" alt="collab" />
+        <img class="collab-img" src="pictures/company.svg" alt="collab" />
+        <img class="collab-img" src="pictures/business.svg" alt="collab" />
+      </div>
+      <a href="#">Get in touch <span class="right-arrow"> →</span></a>
+    </div>
+
+    <br />
+
+    <div style="background-color: #13111c; padding: 20px">
+      <h3><span>/</span>MY EXPERIENCE</h3>
+      <div style="display: flex; flex-wrap: wrap; align-items: center">
+        <h1 class="intro" style="max-width: 90%; margin-right: 15px">
+          I’ve worked with some amazing companies
+        </h1>
+        <a href="">Get in touch<span class="right-arrow"> →</span></a>
+      </div>
+      <hr />
+      <div class="about-experience-container">
+        <div class="about-experience-div">
+          <img
+            class="work-with-img"
+            src="pictures/agency.svg"
+            alt="client logo"
+          />
+        </div>
+        <div class="about-experience-div">
+          <h2>Head of Engineering at Venture</h2>
+          <p
+            class="about-experience-paragrap"
+            style="width: 100%; max-width: 700px"
+            ----
+          >
+            Lorem ipsum dolor sit amet consectet adipiscing elit et et est eget
+            tortor lacus aliquam pulvinar senectus ut sapien sed nun
+          </p>
+        </div>
+        <div class="about-experience-div">
+          <p>JAN 2019 <span>/</span> PRESENT</p>
+        </div>
+      </div>
+      <hr />
+      <div class="about-experience-container">
+        <div class="about-experience-div">
+          <img
+            class="work-with-img"
+            src="pictures/venture.svg"
+            alt="client logo"
+          />
+        </div>
+        <div class="about-experience-div">
+          <h2>Head of Engineering at Venture</h2>
+          <p class="about-experience-paragraph">
+            Lorem ipsum dolor sit amet consectet adipiscing elit et et est eget
+            tortor lacus aliquam pulvinar senectus ut sapien sed nun
+          </p>
+        </div>
+        <div class="about-experience-div">
+          <p>JAN 2019 <span>/</span> PRESENT</p>
+        </div>
+      </div>
+      <hr />
+      <div class="about-experience-container">
+        <div class="about-experience-div">
+          <img
+            class="work-with-img"
+            src="pictures/studio.svg"
+            alt="client logo"
+          />
+        </div>
+        <div class="about-experience-div">
+          <h2>Head of Engineering at Venture</h2>
+          <p class="about-experience-paragraph">
+            Lorem ipsum dolor sit amet consectet adipiscing elit et et est eget
+            tortor lacus aliquam pulvinar senectus ut sapien sed nun
+          </p>
+        </div>
+        <div class="about-experience-div">
+          <p>JAN 2019 <span>/</span> PRESENT</p>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div style="background-color: #2d343f; padding: 20px">
+      <div class="past-education-container">
+        <div class="past-education-div" style="max-width: 500px">
+          <h3><span>/</span>MY EXPERIENCE</h3>
+          <h1 class="intro">Past education & credentials</h1>
+        </div>
+        <div class="past-education-div" style="max-width: 500px">
+          <p>
+            Lorem ipsum dolor sit amet consectet adipiscing elit et et est eget
+            tortor lacus aliquam pulvinar senectus ut sapien sed nun
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="past-education-container">
+        <div class="mini-past-education-div about-me-gen-max-width-div">
+          <h3>STANFORD UNIVERSITY <span>/</span> JAN 2016</h3>
+          <h1 class="intro">Frontend Web Developer Degree</h1>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cill
+            dolore eu fugiat nulla pariatur sint occaecat dolor.
+          </p>
+        </div>
+
+        <div class="mini-past-education-div about-me-gen-max-width-div">
+          <h3>STANFORD UNIVERSITY <span>/</span> JAN 2016</h3>
+          <h1 class="intro">Frontend Web Developer Degree</h1>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cill
+            dolore eu fugiat nulla pariatur sint occaecat dolor.
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="past-education-container">
+        <div class="mini-past-education-div about-me-gen-max-width-div">
+          <h3>STANFORD UNIVERSITY <span>/</span> JAN 2016</h3>
+          <h1 class="intro">Frontend Web Developer Degree</h1>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cill
+            dolore eu fugiat nulla pariatur sint occaecat dolor.
+          </p>
+        </div>
+
+        <div class="mini-past-education-div about-me-gen-max-width-div">
+          <h3>STANFORD UNIVERSITY <span>/</span> JAN 2016</h3>
+          <h1 class="intro">Frontend Web Developer Degree</h1>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cill
+            dolore eu fugiat nulla pariatur sint occaecat dolor.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div
+      class="discover-general"
+      style="background-color: rgba(11, 28, 54); padding: 20px"
+    >
+      <h3><span>/</span>MY TOOLS</h3>
+      <h1 class="intro">Discover what tools I use for work</h1>
+      <div style="display: flex; gap: 20px">
+        <div class="discover-div">
+          <a href="#">
+            <img class="discover-img" src="pictures/html css.png" alt="tools" />
+            <h2>Github</h2>
+            <p class="discover-paragraph">
+              Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
+              elit.
+            </p>
+            <p class="view-snippet together-snippet">
+              Download now <span class="right-arrow"> →</span>
+            </p></a
+          >
+        </div>
+
+        <div class="discover-div">
+          <a href="#">
+            <img class="discover-img" src="pictures/html css.png" alt="tools" />
+            <h2>Github</h2>
+            <p class="discover-paragraph">
+              Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
+              elit.
+            </p>
+            <p class="view-snippet together-snippet">
+              Download now <span class="right-arrow"> →</span>
+            </p></a
+          >
+        </div>
+
+        <div class="discover-div">
+          <a href="#">
+            <img class="discover-img" src="pictures/html css.png" alt="tools" />
+            <h2>Github</h2>
+            <p class="discover-paragraph">
+              Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
+              elit.
+            </p>
+            <p class="view-snippet together-snippet">
+              Download now <span class="right-arrow"> →</span>
+            </p></a
+          >
+        </div>
+
+        <div class="discover-div">
+          <a href="#">
+            <img class="discover-img" src="pictures/html css.png" alt="tools" />
+            <h2>Github</h2>
+            <p class="discover-paragraph">
+              Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
+              elit.
+            </p>
+            <p class="view-snippet together-snippet">
+              Download now <span class="right-arrow"> →</span>
+            </p></a
+          >
+        </div>
+
+        <div class="discover-div">
+          <a href="#">
+            <img class="discover-img" src="pictures/html css.png" alt="tools" />
+            <h2>Github</h2>
+            <p class="discover-paragraph">
+              Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
+              elit.
+            </p>
+            <p class="view-snippet together-snippet">
+              Download now <span class="right-arrow"> →</span>
+            </p></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
