@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="latestportfolio.css" />
+    <link rel="stylesheet" href="latestportfolio.js" />
+    <link rel="icon" type="" href="pictures/anorms logo.png" />
     <style>
       /* this is about css start */
       /* On smaller screens, decrease text size */
@@ -12,9 +15,6 @@
           font-size: 29px;
         }
 
-        .mini-on-screen {
-          font-size: 12px;
-        }
         .mini-mobile {
           align-items: center;
           text-align: center;
@@ -69,6 +69,8 @@
 
       .h3-skills-color-fade {
         color: gray;
+        margin-bottom: 15px;
+        margin-top: 10px;
       }
 
       .collab-img {
@@ -85,16 +87,26 @@
         width: 100%;
         max-width: 400px;
         border-radius: 50%;
+        border: 1px solid white;
       }
 
       .aboutme-container,
-      .mystory-container,
+      .mystory-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0px 50px 0px;
+        justify-content: space-evenly;
+      }
+
       .sskills-container {
         display: flex;
         flex-wrap: wrap;
-        padding: 10px;
         justify-content: space-evenly;
-        align-items: center;
+      }
+
+      .sskills-inner {
+        gap: 105px;
+        margin-top: 10px;
       }
 
       .aboout-me-years-experience-span {
@@ -164,15 +176,6 @@
         border-radius: 20px;
       }
 
-      .discover-div:hover {
-        -ms-transform: scale(1.1);
-        /* IE 9 */
-        -webkit-transform: scale(1.1);
-        /* Safari 3-8 */
-        transform: scale(1.06);
-        color: gray;
-      }
-
       .discover-img {
         width: 70px;
       }
@@ -186,15 +189,7 @@
   <body>
     <div class="aboutme-container">
       <div class="aboutme-subcontainer" style="max-width: 500px; width: 100%">
-        <div
-          class="white-top"
-          style="
-            width: 100px;
-            height: 5px;
-            background-color: whitesmoke;
-            margin-bottom: 5px;
-          "
-        ></div>
+        <div class="white-top"></div>
         <h1 class="intro">Nice to meet you, I’m Taleeb Ayobami</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit fames turpis
@@ -261,7 +256,7 @@
 
     <br />
 
-    <div style="background-color: rgba(11, 28, 54); padding: 20px">
+    <div style="background-color: rgba(11, 28, 54); padding: 50px 0px 50px 0px">
       <div>
         <h3><span>/</span>MY EXPERIENCE</h3>
         <div
@@ -324,7 +319,7 @@
       <div>
         <h1 class="intro">Brand & companies I have collaborated with</h1>
       </div>
-      <div>
+      <div style="margin-top: 20px">
         <img class="collab-img" src="pictures/organization.svg" alt="collab" />
         <img class="collab-img" src="pictures/studio.svg" alt="collab" />
         <img class="collab-img" src="pictures/enterprise.svg" alt="collab" />
@@ -411,7 +406,7 @@
     </div>
     <br />
 
-    <div style="background-color: #2d343f; padding: 20px">
+    <div style="background-color: #101216; padding: 50px 0px 50px 0px">
       <div class="past-education-container">
         <div class="past-education-div" style="max-width: 500px">
           <h3><span>/</span>MY EXPERIENCE</h3>
@@ -476,7 +471,7 @@
     >
       <h3><span>/</span>MY TOOLS</h3>
       <h1 class="intro">Discover what tools I use for work</h1>
-      <div style="display: flex; gap: 20px">
+      <div style="display: flex; gap: 20px; overflow: auto">
         <div class="discover-div">
           <a href="#">
             <img class="discover-img" src="pictures/html css.png" alt="tools" />
