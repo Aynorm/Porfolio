@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="latestportfolio.css" />
     <link rel="stylesheet" href="latestportfolio.js" />
-    <link rel="icon" type="" href="pictures/anorms logo.png" />
+    <link rel="icon" type="" href="pictures/favicon aynorm.png" />
     <style>
       /* this is about css start */
       /* On smaller screens, decrease text size */
@@ -19,6 +19,27 @@
           align-items: center;
           text-align: center;
           justify-content: center;
+        }
+
+        .aboutme-container,
+        .mystory-container,
+        .past-education-container,
+        .about-experience-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .about-me-years-experience-paragraph {
+          font-size: 10px;
+        }
+
+        .about-me-years-experience-span {
+          font-size: 25px;
+          font-weight: 900;
+        }
+
+        .skills-h2-mobile {
+          font-size: 18px;
         }
 
         p,
@@ -93,9 +114,9 @@
       .aboutme-container,
       .mystory-container {
         display: flex;
-        flex-wrap: wrap;
+        gap: 15px;
         padding: 50px 0px 50px 0px;
-        justify-content: space-evenly;
+        justify-content: space-between;
       }
 
       .sskills-container {
@@ -109,7 +130,7 @@
         margin-top: 10px;
       }
 
-      .aboout-me-years-experience-span {
+      .about-me-years-experience-span {
         font-weight: 700;
         font-size: 30px;
       }
@@ -125,8 +146,8 @@
       .about-me-years-experience-paragraph {
         margin-left: 5px;
         font-weight: 700;
-        font-size: large;
       }
+
       .aboutme-subcontainer,
       .mystory-div,
       .sskills-inner {
@@ -136,17 +157,15 @@
       }
 
       .mystory-div {
-        max-width: 500px;
+        max-width: 700px;
         width: auto;
       }
       .about-experience-container,
-      .past-education-container,
       .past-education-container {
         display: flex;
-        flex-wrap: wrap;
         gap: 5%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
       }
       .about-experience-div,
       .past-education-div,
@@ -163,7 +182,7 @@
       }
 
       .about-me-gen-max-width-div {
-        max-width: 500px;
+        max-width: 700px;
       }
 
       .discover-div {
@@ -187,8 +206,57 @@
     </style>
   </head>
   <body>
+    <div
+      class="nav-color-back"
+      style="
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        justify-content: space-between;
+      "
+    >
+      <div
+        style="display: flex; align-items: center; margin: 0px; padding: 0px"
+      >
+        <img
+          style="min-width: 30px; width: 25%; max-width: 100px"
+          src="pictures/aynorm freelance.png"
+          alt="logo"
+        />
+        <h3 style="margin-left: 0px; padding: 0px">Aynorm</h3>
+      </div>
+      <ul class="head-ul">
+        <li class="li-row">
+          <a
+            class="link"
+            href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
+            >Home</a
+          >
+        </li>
+        <li class="li-row">
+          <a class="link" href="/Porfolio/about">About</a>
+        </li>
+        <li class="li-row">
+          <a class="link" href="/Porfolio/portfolio">Portfolio</a>
+        </li>
+        <li class="li-row"><a class="link" href="#">Blog</a></li>
+        <li class="li-row"><a class="link" href="#">Page</a></li>
+        <li class="li-row">
+          <a
+            style="display: flex; color: orange"
+            class="link"
+            href="/Porfolio/hire-me"
+            ><span>Hire</span> me</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <br />
     <div class="aboutme-container">
-      <div class="aboutme-subcontainer" style="max-width: 500px; width: 100%">
+      <div class="aboutme-subcontainer" style="max-width: 700px; width: 100%">
         <div class="white-top"></div>
         <h1 class="intro">Nice to meet you, I’m Taleeb Ayobami</h1>
         <p>
@@ -197,15 +265,15 @@
           magna est in nulla id volutpat et venenatis at lacus.
         </p>
         <hr />
-        <div style="display: flex; flex-wrap: wrap">
+        <div style="display: flex">
           <div class="about-me-years-exp-div">
-            <p class="aboout-me-years-experience-span">12<span>+</span></p>
+            <p class="about-me-years-experience-span">12<span>+</span></p>
             <p class="about-me-years-experience-paragraph">
               Years of experience
             </p>
           </div>
           <div class="about-me-years-exp-div">
-            <p class="aboout-me-years-experience-span">150<span>+</span></p>
+            <p class="about-me-years-experience-span">150<span>+</span></p>
             <p class="about-me-years-experience-paragraph">
               Successful projects
             </p>
@@ -213,7 +281,10 @@
         </div>
       </div>
 
-      <div class="aboutme-subcontainer" style="max-width: 500px">
+      <div
+        class="aboutme-subcontainer"
+        style="max-width: 700px; text-align: center"
+      >
         <img class="my-passport" src="pictures/ay passport.jpg" alt="mypic" />
       </div>
     </div>
@@ -282,23 +353,23 @@
       <div class="sskills-container">
         <div class="sskills-inner">
           <h3 class="h3-skills-color-fade">SKILL SET</h3>
-          <h2>HTML & CSS</h2>
-          <h2>Javascript</h2>
-          <h2>React JS</h2>
+          <h2 class="skills-h2-mobile">HTML & CSS</h2>
+          <h2 class="skills-h2-mobile">Javascript</h2>
+          <h2 class="skills-h2-mobile">React JS</h2>
         </div>
 
         <div class="sskills-inner">
           <h3 class="h3-skills-color-fade">AWWARDS</h3>
-          <h2>Best Website of 2022</h2>
-          <h2>AWWW Website Award</h2>
-          <h2>Innovative Developer 2019</h2>
+          <h2 class="skills-h2-mobile">Best Website of 2022</h2>
+          <h2 class="skills-h2-mobile">AWWW Website Award</h2>
+          <h2 class="skills-h2-mobile">Innovative Developer 2019</h2>
         </div>
 
         <div class="sskills-inner">
           <h3 class="h3-skills-color-fade">TOP CLIENTS</h3>
-          <h2>Venture</h2>
-          <h2>Agency</h2>
-          <h2>Studio</h2>
+          <h2 class="skills-h2-mobile">Venture</h2>
+          <h2 class="skills-h2-mobile">Agency</h2>
+          <h2 class="skills-h2-mobile">Studio</h2>
         </div>
       </div>
     </div>
@@ -333,10 +404,15 @@
 
     <div style="background-color: #13111c; padding: 20px">
       <h3><span>/</span>MY EXPERIENCE</h3>
-      <div style="display: flex; flex-wrap: wrap; align-items: center">
-        <h1 class="intro" style="max-width: 90%; margin-right: 15px">
-          I’ve worked with some amazing companies
-        </h1>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <h1 class="intro">I’ve worked with some amazing companies</h1>
         <a href="">Get in touch<span class="right-arrow"> →</span></a>
       </div>
       <hr />
@@ -353,7 +429,6 @@
           <p
             class="about-experience-paragrap"
             style="width: 100%; max-width: 700px"
-            ----
           >
             Lorem ipsum dolor sit amet consectet adipiscing elit et et est eget
             tortor lacus aliquam pulvinar senectus ut sapien sed nun
@@ -543,5 +618,145 @@
         </div>
       </div>
     </div>
+    <hr />
+    <footer>
+      <div
+        class="get-in-touch-container"
+        style="padding: 10px; align-items: center; gap: 10px; display: flex"
+      >
+        <div
+          class="get-in-touch glass-background mini-mobile"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            align-items: center;
+          "
+        >
+          <img class="my-pic" src="pictures/ay passport.jpg" alt="mypic" />
+          <div style="align-items: center">
+            <div><h2 style="font-size: 34px">Taleeb Ayobami</h2></div>
+            <div><p>Head of Engineering at Aynorm</p></div>
+          </div>
+        </div>
+
+        <div style="padding-bottom: 20px" class="get-in-touch glass-background">
+          <h3 style="font-size: 35px">
+            Get in touch <span class="right-arrow"> &rarr;</span>
+          </h3>
+          <ul
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              margin-left: -40px;
+              gap: 20px;
+            "
+          >
+            <div>
+              <p class="email-call">EMAIL ME:</p>
+              <a href="mailto:taleeb4000@gmail.com"
+                >Aynorms@gmail.com<span class="right-arrow"> &rarr;</span></a
+              >
+            </div>
+
+            <div>
+              <p class="email-call">CALL ME:</p>
+              <li>(252) 969 - 6943<span class="right-arrow"> &rarr;</span></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div style="display: flex; justify-content: center">
+        <ul
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px;
+            padding: 10px;
+            gap: 10px;
+          "
+        >
+          <li>
+            <a href="https://web.facebook.com/taleeb.ayobami1"
+              ><img class="img-li" src="pictures/7.facebook.png" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/taleeb_ayobami"
+              ><img class="img-li" src="pictures/9.twitter.png" alt="X"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/aynorms/"
+              ><img
+                class="img-li"
+                src="pictures/8.instagram.png"
+                alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/taleeb-ayobami-90a450164/"
+              ><img
+                class="img-li"
+                src="pictures/11.linkedin.png"
+                alt="Linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="https://youtube.com/Aynorm"
+              ><img class="img-li" src="pictures/12.youtube.png" alt="Youtube"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/Aynorm"
+              ><img class="img-li" src="pictures/14.github.png" alt="github"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.freelancer.com/u/AYNORMPHOTOGRAPY"
+              ><img
+                class="img-li"
+                src="pictures/13.freelancer.png"
+                alt="freelancer"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <br />
+
+      <div class="last-content" style="align-items: center">
+        <div class="bottom">
+          <ul
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+              margin: 0px;
+              padding: 0px;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <li>
+              <a href="https://aynorm.github.io/Porfolio/latestportfolio.html"
+                >Home</a
+              >
+            </li>
+            <li><a href="/Porfolio/about">About</a></li>
+            <li><a href="/Porfolio/portfolio">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="/Porfolio/contact">Contact</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div style="justify-content: center; text-align: center" class="bottom">
+          <p>
+            Copyright 2024 All rights reserved | This template is made by
+            <span><a href="">Aynorm</a></span>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

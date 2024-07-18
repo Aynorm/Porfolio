@@ -4,217 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="latestportfolio.css" />
-    <link rel="stylesheet" href="latestportfolio.js" />
-    <link rel="icon" type="" href="pictures/anorms logo.png" />
     <style>
-      h1 {
-        font-size: 45px;
-      }
-      .contact-container-in-contact {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-      .contact-subdiv {
-        flex-grow: 1;
-        flex-basis: 200;
-      }
-
-      .contact-label {
-        font-size: 25px;
-        font-weight: 700;
-        color: gray;
-      }
-
-      .type-text {
-        width: 100%;
-        max-width: 500p;
-        height: 20px;
-        border: none;
-        margin: 15px 0px 15px 0px;
-        border-bottom: 2px solid white;
-        background-color: transparent;
+      .dropbtn {
+        background-color: red;
         color: white;
-        padding: 10px 0px 10px 0px;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
       }
     </style>
   </head>
   <body>
-    <div style="padding: 40px 0px 40px 0px">
-      <div>
-        <div class="white-top"></div>
-        <h1 style="margin: 0px">Let's work together</h1>
-      </div>
-      <div class="contact-container-in-contact">
-        <div class="contact-subdiv" style="width: 100%; max-width: 600px">
-          <h2 style="font-size: 35px; margin: 0px">Get in touch with me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisci elit donec faucibus
-            adipiscing mauris.
-          </p>
-          <div style="display: flex; justify-content: start">
-            <ul
-              style="
-                display: flex;
-                flex-wrap: wrap;
-                margin: 0px;
-                padding: 10px;
-                gap: 10px;
-              "
-            >
-              <li>
-                <a href="#"
-                  ><img
-                    class="img-li"
-                    src="pictures/7.facebook.png"
-                    alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img class="img-li" src="pictures/9.twitter.png" alt="X"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="img-li"
-                    src="pictures/8.instagram.png"
-                    alt="Instagram"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="img-li"
-                    src="pictures/11.linkedin.png"
-                    alt="Linkedin"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="img-li"
-                    src="pictures/12.youtube.png"
-                    alt="Youtube"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="img-li"
-                    src="pictures/14.github.png"
-                    alt="github"
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    class="img-li"
-                    src="pictures/13.freelancer.png"
-                    alt="freelancer"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="contact-subdiv"
-          style="
-            background-color: #2d343f;
-            padding: 20px;
-            border-radius: 20px;
-            max-width: 600px;
-          "
-        >
-          <div style="padding: 50px 0px 50px 25px; min-width: 300px">
-            <label class="contact-label" for="">Enter your name</label><br />
-            <input class="type-text" type="text" /><br />
-            <label class="contact-label" for="">Your email address</label><br />
-            <input class="type-text" type="text" /><br />
-            <label class="contact-label" for="">Subject</label><br />
-            <input class="type-text" type="text" /><br />
-            <label class="contact-label" for="">Write me a message</label><br />
-            <input class="type-text" type="text" />
-            <p>
-              <a href="#">Contact me<span class="right-arrow"> &rarr;</span></a>
-            </p>
-          </div>
-        </div>
+    <div class="dropdown">
+      <button class="dropbtn">Page</button>
+      <div class="dropdown-content">
+        <a href="">Hire me</a>
+        <a href="">Blog</a>
+        <a href="">Last</a>
       </div>
     </div>
-
-    <hr />
-    <div
-      style="
-        background-color: rgba(11, 28, 54, 0.4);
-        padding: 50px 0px 50px 0px;
-      "
-    >
-      <div
-        style="align-items: center; text-align: center; justify-content: center"
-      >
-        <h2><span>/</span>FAQS</h2>
-        <h1 class="intro">Frequently Asked Questions</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper sed
-          tortor dolor cursus sed pretium amet dictum tincidunt dapibus id
-          egestas tempus enim.
-        </p>
-      </div>
-
-      <div>
-        <hr />
-        <h1 class="intro">Are you looking a new full time role?</h1>
-        <hr />
-        <h1 class="intro">How many years of experience do you have?</h1>
-        <hr />
-        <h1 class="intro">Are you interested in international roles?</h1>
-        <hr />
-        <h1 class="intro">What are your consulting rates?</h1>
-      </div>
-    </div>
-
-    <hr />
-    <div style="padding: 50px 0px 50px 0px">
-      <h2><span>/</span>MY PAST CLIENTS</h2>
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: space-around;
-        "
-      >
-        <h1 class="intro" style="max-width: 600px">
-          Brand & companies I had worked with
-        </h1>
-        <p style="max-width: 600px">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit ullamcorper sed
-          tortor dolor cursus sed pretium amet dictum tincidunt dapibus id
-          egestas tempus enim.
-        </p>
-      </div>
-
-      <hr />
-
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-          justify-content: center;
-          padding: 40px 0px 40px 0px;
-        "
-      >
-        <img class="collab-img" src="pictures/organization.svg" alt="collab" />
-        <img class="collab-img" src="pictures/studio.svg" alt="collab" />
-        <img class="collab-img" src="pictures/enterprise.svg" alt="collab" />
-        <img class="collab-img" src="pictures/company.svg" alt="collab" />
-        <img class="collab-img" src="pictures/business.svg" alt="collab" />
-      </div>
-    </div>
-    <hr />
   </body>
 </html>

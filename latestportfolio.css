@@ -12,14 +12,33 @@
     text-align: center;
     justify-content: center;
   }
+
+  .container-port, 
+  .me-container, 
+  .general-snippet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-me-years-experience-paragraph {
+    font-size: 10px;
+  }
+
+  .about-me-years-experience-span {
+  font-size: 25px;
+  font-weight: 900;
+  }
+
+  .h2-portfolio, .paragraph-portfolio {font-size: 20px;}
   
   p, h2, h3, h1 {color: white;}
 }
 
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
-  height: 1px;
+  height: 0px;
 }
 
 /* Track */
@@ -37,6 +56,10 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(179, 172, 172);
+}
+
+.nav-color-back {
+  background-color: rgba(0, 0, 8, 3)
 }
 
 /*
@@ -64,13 +87,17 @@
 }
 */
 
+.change {
+  border-bottom: 1px solid gainsboro
+}
+
 .learn-portfolio {
   color: gray;
   font-weight: 700;
 }
 
 .background-img {
-background-image: url(pictures/myphotoblack.png);
+background-image: url(pictures/lappy.png);
 background-size: 100%;
 background-repeat: no-repeat;
 border-radius: 20px;
@@ -78,9 +105,8 @@ border-radius: 20px;
 
 .me-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 50px;
-  justify-content: space-between;
+  justify-content: space-betwee;
   align-items: center;
 }
 
@@ -88,7 +114,7 @@ border-radius: 20px;
   flex-grow: 1;
   flex-basis: 200;
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .white-top {
@@ -128,11 +154,9 @@ p {
 
          .container-port {
            display: flex;
-           flex-wrap: wrap;
-           align-items: center;
            width: 100%;
-           gap: 5px;
-           margin-top: 30px;
+           gap: 50px;
+           padding: 50px 0px 50px 0px;
            justify-content:space-evenly;
          }
     
@@ -159,15 +183,14 @@ p {
          }
     
          .h2-portfolio {
-           font-weight: 900;
-           font-size: 30p;
-           margin: 0px;
+           font-weight: 700;
+           margin-left: 30px;
            padding: 0px;
          }
     
          .portfolio-img {
            width: 100%;
-           max-width: 500px;
+           max-width: 700px;
            border-bottom-left-radius: 20px;
            border-bottom-right-radius: 20px;
          }
@@ -199,7 +222,8 @@ p {
            border-top-right-radius: 20px;
            border-bottom-left-radius: 20px;
            border-bottom-right-radius: 20px;
-           max-width: 500px;
+           max-width: 100%;
+           max-width: 700px;
          }
     
          .special-child-dev {
@@ -279,6 +303,27 @@ p {
   margin-left: -15px;
 }
 
+.about-me-gen-max-width-div {
+  max-width: 700px;
+}
+
+.about-me-years-experience-paragraph {
+  margin-left: 5px;
+  font-weight: 700;
+}
+.about-me-years-exp-div {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 200;
+  max-width: 200px;
+}
+.about-me-years-experience-span {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+
 li {
   list-style: none;
 }
@@ -288,25 +333,29 @@ h1 {
   width: 100%;
   font-weight: 900;
   padding:0px;
-  margin:0px
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 h2 {
   font-size: 24px;
-    width: 100%;
-    font-weight: 700;
-    padding:0px;
-    margin:0px
+  width: 100%;
+  font-weight: 700;
+  padding:0px;
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 h3 {
   font-size: 20px;
   padding:0px;
-  margin:0px
+margin-top:5px;
+margin-bottom:5px;
 }
 
 div {
-  margin: 0px;
+  margin-top:5px;
+  margin-bottom:5px;
   padding: 0px;
 }
 
@@ -412,9 +461,7 @@ img {
               padding: 0px 0px 40px 0px;
               border-radius: 20px;
               width: 100%;
-              height: 100%;
-              max-width: 388px;
-              max-height: 540px;
+              height: 100%;  
             }
       
             .snippet-div:hover, .child-dev:hover {
@@ -427,14 +474,14 @@ img {
       
             .general-snippet {
               display: flex;
-              flex-wrap: wrap;
-              gap: 5px;
-              justify-content: space-evenly;
+              gap: 10px;
+              padding: 0px 0px 50px 0px;
+              justify-content: space-between;
             }
       
             .img-snippet {
               width: 100%;
-              max-width: 400px;
+              max-width: 700px;
               border-top-right-radius: 20px;
               border-top-left-radius: 20px;
             }
@@ -471,4 +518,8 @@ img {
       background-color: transparent;
       color: white;
       padding: 10px 0px 10px 0px;
+    }
+
+    .email-call {
+      color: gray;
     }
