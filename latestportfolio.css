@@ -20,6 +20,12 @@
     flex-wrap: wrap;
   }
 
+  .get-in-touch-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
   .about-me-years-experience-paragraph {
     font-size: 10px;
   }
@@ -59,7 +65,7 @@
 }
 
 .nav-color-back {
-  background-color: rgba(0, 0, 8, 3)
+  background-color: rgba(0, 0, 0, 0.1)
 }
 
 /*
@@ -86,6 +92,8 @@
   padding: 10px;
 }
 */
+
+*{box-sizing: border-box;}
 
 .change {
   border-bottom: 1px solid gainsboro
@@ -124,11 +132,14 @@ border-radius: 20px;
 }
 
 body {
-  background-color: #13111c;
+  background-color: #1b1f24;
   color: white;
-  font-family: Spacegrotesk, sans-serif;
+  font-family: Spacegrotesk,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
   font-size: 18px;
   font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px 0px 20px;
 }
 
 hr {
@@ -172,8 +183,8 @@ p {
     
          .paragraph-portfolio {
            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-           font-size: 30px;
-           margin-left: 35px;
+           font-size: 100%;
+           padding: 0px 10px 0px 10px;
          }
 
          .project-have-done {
@@ -184,8 +195,7 @@ p {
     
          .h2-portfolio {
            font-weight: 700;
-           margin-left: 30px;
-           padding: 0px;
+           padding: 0px 10px 0px 10px ;
          }
     
          .portfolio-img {
@@ -196,9 +206,10 @@ p {
          }
     
          button {
-           background-color: #13111c;
+           background-color: #5d6c83;
            color: white;
            padding: 10px;
+           margin: 0px 3px;
            border: none;
            border-radius: 10px;
            cursor: pointer;
@@ -207,8 +218,6 @@ p {
     
          .button-div {
            display: flex;
-           gap: 10px;
-           margin-right: 10px;
            justify-content: end;
          }
     
@@ -323,6 +332,11 @@ p {
   font-size: 30px;
 }
 
+.tools-image {
+  width: 90px;
+  border-radius: 50%;
+  background-color: white;
+}
 
 li {
   list-style: none;
@@ -370,13 +384,13 @@ span {
 }
 
 .skills-colom {
-  background-color: #2d343f;
-    width: 100%;
-    max-width: 306px;
-    min-width: 300px;
-    max-height: 354px;
-    padding: 120px 40px 88px;
-    border-radius: 20px;
+    background-color: #2d343f;
+      width: 100%;
+      max-width: 406px;
+      min-width: 350px;
+    
+      padding: 120px 40px 88px;
+      border-radius: 20px;
 }
 
 .skills-colom:hover {
@@ -409,8 +423,8 @@ img {
 
 .get-in-touch-container {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10px ;
+  column-gap: 20px;
+  
 }
 
 .get-in-touch {
@@ -464,7 +478,8 @@ img {
               height: 100%;  
             }
       
-            .snippet-div:hover, .child-dev:hover {
+            .snippet-div:hover, 
+            .child-dev:hover {
               -ms-transform: scale(1.5);
               /* IE 9 */
               -webkit-transform: scale(1.5);

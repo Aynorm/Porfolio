@@ -50,12 +50,6 @@
         }
       }
 
-      body {
-        background-color: #13111c;
-        color: white;
-        font-family: Spacegrotesk, sans-serif;
-        letter-spacing: 0.06em;
-      }
       .second-story-img {
         width: 100%;
         max-width: 700px;
@@ -188,9 +182,9 @@
       .discover-div {
         background-color: #2d343f;
         width: 100%;
-        max-width: 306px;
-        min-width: 300px;
-        max-height: 354px;
+        max-width: 406px;
+        min-width: 350px;
+
         padding: 120px 40px 88px;
         border-radius: 20px;
       }
@@ -293,7 +287,7 @@
 
     <div
       class="mystory-container"
-      style="background-color: rgb(33, 40, 51, 0.2); border-radius: 20px"
+      style="background-color: #2d343f; border-radius: 20px"
     >
       <div class="mystory-div">
         <h3><span>/</span>MY STORY</h3>
@@ -327,7 +321,12 @@
 
     <br />
 
-    <div style="background-color: rgba(11, 28, 54); padding: 50px 0px 50px 0px">
+    <div
+      style="
+        background-color: rgba(11, 28, 54, 0.2);
+        padding: 50px 0px 50px 0px;
+      "
+    >
       <div>
         <h3><span>/</span>MY EXPERIENCE</h3>
         <div
@@ -402,7 +401,12 @@
 
     <br />
 
-    <div style="background-color: #13111c; padding: 20px">
+    <div
+      style="
+        background-color: rgba(11, 28, 54, 0.2);
+        padding: 50px 0px 50px 0px;
+      "
+    >
       <h3><span>/</span>MY EXPERIENCE</h3>
       <div
         style="
@@ -481,7 +485,7 @@
     </div>
     <br />
 
-    <div style="background-color: #101216; padding: 50px 0px 50px 0px">
+    <div style="background-color: transparent; padding: 50px 0px 50px 0px">
       <div class="past-education-container">
         <div class="past-education-div" style="max-width: 500px">
           <h3><span>/</span>MY EXPERIENCE</h3>
@@ -542,20 +546,23 @@
 
     <div
       class="discover-general"
-      style="background-color: rgba(11, 28, 54); padding: 20px"
+      style="
+        background-color: rgba(11, 28, 54, 0.2);
+        padding: 50px 0px 50px 0px;
+      "
     >
       <h3><span>/</span>MY TOOLS</h3>
       <h1 class="intro">Discover what tools I use for work</h1>
       <div style="display: flex; gap: 20px; overflow: auto">
         <div class="discover-div">
           <a href="#">
-            <img class="discover-img" src="pictures/html css.png" alt="tools" />
+            <img class="tools-image" src="pictures/github.png" alt="tools" />
             <h2>Github</h2>
             <p class="discover-paragraph">
               Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
               elit.
             </p>
-            <p class="view-snippet together-snippet">
+            <p class="view-snippet">
               Download now <span class="right-arrow"> →</span>
             </p></a
           >
@@ -563,13 +570,17 @@
 
         <div class="discover-div">
           <a href="#">
-            <img class="discover-img" src="pictures/html css.png" alt="tools" />
-            <h2>Github</h2>
+            <img
+              class="tools-image"
+              src="pictures/Visual_Studio_Code_1.35_icon.png"
+              alt="tools"
+            />
+            <h2>VS Code</h2>
             <p class="discover-paragraph">
               Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
               elit.
             </p>
-            <p class="view-snippet together-snippet">
+            <p class="view-snippet">
               Download now <span class="right-arrow"> →</span>
             </p></a
           >
@@ -577,13 +588,17 @@
 
         <div class="discover-div">
           <a href="#">
-            <img class="discover-img" src="pictures/html css.png" alt="tools" />
-            <h2>Github</h2>
+            <img
+              class="tools-image"
+              src="pictures/Adobe_Illustrator_CC_icon.svg.png"
+              alt="tools"
+            />
+            <h2>Adobe Illustrator</h2>
             <p class="discover-paragraph">
               Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
               elit.
             </p>
-            <p class="view-snippet together-snippet">
+            <p class="view-snippet">
               Download now <span class="right-arrow"> →</span>
             </p></a
           >
@@ -591,13 +606,17 @@
 
         <div class="discover-div">
           <a href="#">
-            <img class="discover-img" src="pictures/html css.png" alt="tools" />
-            <h2>Github</h2>
+            <img
+              class="tools-image"
+              src="pictures/Photoshop_CC_icon.png"
+              alt="tools"
+            />
+            <h2>Photoshop</h2>
             <p class="discover-paragraph">
               Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
               elit.
             </p>
-            <p class="view-snippet together-snippet">
+            <p class="view-snippet">
               Download now <span class="right-arrow"> →</span>
             </p></a
           >
@@ -605,43 +624,113 @@
 
         <div class="discover-div">
           <a href="#">
-            <img class="discover-img" src="pictures/html css.png" alt="tools" />
-            <h2>Github</h2>
+            <img
+              class="tools-image"
+              src="pictures/Lightroom_CC_logo.png"
+              alt="tools"
+            />
+            <h2>Lightroom</h2>
             <p class="discover-paragraph">
               Lorem ipsum dolor sit amet dolor sitolme almo consectet adipiscing
               elit.
             </p>
-            <p class="view-snippet together-snippet">
+            <p class="view-snippet">
               Download now <span class="right-arrow"> →</span>
             </p></a
           >
         </div>
       </div>
     </div>
+
     <hr />
     <footer>
       <div
         class="get-in-touch-container"
-        style="padding: 10px; align-items: center; gap: 10px; display: flex"
+        style="align-items: center; display: flex"
       >
         <div
           class="get-in-touch glass-background mini-mobile"
           style="
             display: flex;
             flex-wrap: wrap;
-            column-gap: 30px;
+            column-gap: 10px;
             align-items: center;
           "
         >
           <img class="my-pic" src="pictures/ay passport.jpg" alt="mypic" />
-          <div style="align-items: center">
-            <div><h2 style="font-size: 34px">Taleeb Ayobami</h2></div>
-            <div><p>Head of Engineering at Aynorm</p></div>
+          <div style="align-items: center; text-align: center">
+            <h2 style="font-size: 190%">Taleeb Ayobami</h2>
+            <p>Head of Engineering at Aynorm</p>
+            <div style="display: flex">
+              <ul
+                style="
+                  display: flex;
+                  margin: 0px;
+                  column-gap: 5px;
+                  padding: 0px;
+                "
+              >
+                <li>
+                  <a href="https://web.facebook.com/taleeb.ayobami1"
+                    ><img
+                      class="img-li"
+                      src="pictures/7.facebook.png"
+                      alt="Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://x.com/taleeb_ayobami"
+                    ><img class="img-li" src="pictures/9.twitter.png" alt="X"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/aynorms/"
+                    ><img
+                      class="img-li"
+                      src="pictures/8.instagram.png"
+                      alt="Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/taleeb-ayobami-90a450164/"
+                    ><img
+                      class="img-li"
+                      src="pictures/11.linkedin.png"
+                      alt="Linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://youtube.com/Aynorm"
+                    ><img
+                      class="img-li"
+                      src="pictures/12.youtube.png"
+                      alt="Youtube"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/Aynorm"
+                    ><img
+                      class="img-li"
+                      src="pictures/14.github.png"
+                      alt="github"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.freelancer.com/u/AYNORMPHOTOGRAPY"
+                    ><img
+                      class="img-li"
+                      src="pictures/13.freelancer.png"
+                      alt="freelancer"
+                  /></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div style="padding-bottom: 20px" class="get-in-touch glass-background">
-          <h3 style="font-size: 35px">
+        <div style="padding: 0px" class="get-in-touch glass-background">
+          <h3 style="font-size: 35px; margin: 0px">
             Get in touch <span class="right-arrow"> &rarr;</span>
           </h3>
           <ul
@@ -649,7 +738,7 @@
               display: flex;
               flex-wrap: wrap;
               margin-left: -40px;
-              gap: 20px;
+              column-gap: 20px;
             "
           >
             <div>
@@ -667,62 +756,6 @@
         </div>
       </div>
       <hr />
-      <div style="display: flex; justify-content: center">
-        <ul
-          style="
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0px;
-            padding: 10px;
-            gap: 10px;
-          "
-        >
-          <li>
-            <a href="https://web.facebook.com/taleeb.ayobami1"
-              ><img class="img-li" src="pictures/7.facebook.png" alt="Facebook"
-            /></a>
-          </li>
-          <li>
-            <a href="https://x.com/taleeb_ayobami"
-              ><img class="img-li" src="pictures/9.twitter.png" alt="X"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/aynorms/"
-              ><img
-                class="img-li"
-                src="pictures/8.instagram.png"
-                alt="Instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/taleeb-ayobami-90a450164/"
-              ><img
-                class="img-li"
-                src="pictures/11.linkedin.png"
-                alt="Linkedin"
-            /></a>
-          </li>
-          <li>
-            <a href="https://youtube.com/Aynorm"
-              ><img class="img-li" src="pictures/12.youtube.png" alt="Youtube"
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/Aynorm"
-              ><img class="img-li" src="pictures/14.github.png" alt="github"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.freelancer.com/u/AYNORMPHOTOGRAPY"
-              ><img
-                class="img-li"
-                src="pictures/13.freelancer.png"
-                alt="freelancer"
-            /></a>
-          </li>
-        </ul>
-      </div>
       <br />
 
       <div class="last-content" style="align-items: center">
