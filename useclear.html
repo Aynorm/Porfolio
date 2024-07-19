@@ -4,36 +4,176 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="latestportfolio.css" />
+    <link rel="stylesheet" href="latestportfolio.js" />
+    <link rel="icon" type="" href="pictures/favicon aynorm.png" />
+
     <style>
-      .dropbtn {
-        background-color: red;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
+      /* Portfolio css */
+      .client-div {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
       }
 
-      .dropdown {
-        position: relative;
-        display: inline-block;
+      .client-img-paragraph {
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+      }
+      .clients-image {
+        max-width: 150px;
+        border-radius: 50%;
+        border: 1px solid white;
       }
 
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: whitesmoke;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+      .client-h2-paragraph {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .client-logos {
+        max-width: 150px;
+        text-align: center;
+      }
+      /* Portfolio css */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .skills-colom {
+          width: 100%;
+          max-width: 400px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="dropdown">
-      <button class="dropbtn">Page</button>
-      <div class="dropdown-content">
-        <a href="">Hire me</a>
-        <a href="">Blog</a>
-        <a href="">Last</a>
+    <div
+      style="
+        margin: 0px;
+        padding: 0px;
+        background-color: rgba(11, 28, 54, 0.2);
+        display: flex;
+        column-gap: 10px;
+        overflow: auto;
+      "
+    >
+      <div class="skills-colom">
+        <div>
+          <div class="client-div">
+            <img
+              class="client-logos"
+              src="pictures/agency.svg"
+              alt="clients-logos"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis
+              ullamcorper quis id elementum convallis lacus gravida.
+            </p>
+          </div>
+
+          <div class="client-img-paragraph">
+            <img
+              class="clients-image"
+              src="pictures/andy smith.jpeg"
+              alt="client"
+            />
+            <h2 class="client-h2-paragraph h2-general" style="margin-top: 3px">
+              ANDY SMITH
+            </h2>
+            <p class="client-h2-paragraph">Web Designer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-colom">
+        <div>
+          <div class="client-div">
+            <img
+              class="client-logos"
+              src="pictures/company.svg"
+              alt="clients-logos"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis
+              ullamcorper quis id elementum convallis lacus gravida.
+            </p>
+          </div>
+
+          <div class="client-img-paragraph">
+            <img
+              class="clients-image"
+              src="pictures/mariam 2x2.jpg"
+              alt="client"
+            />
+            <h2 class="client-h2-paragraph h2-general" style="margin-top: 3px">
+              ADEOLA MARIAM
+            </h2>
+            <p class="client-h2-paragraph">Graphic Designer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-colom">
+        <div>
+          <div class="client-div">
+            <img
+              class="client-logos"
+              src="pictures/business.svg"
+              alt="clients-logos"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis
+              ullamcorper quis id elementum convallis lacus gravida.
+            </p>
+          </div>
+
+          <div class="client-img-paragraph">
+            <img
+              class="clients-image"
+              src="pictures/mom 2x2.jpg"
+              alt="client"
+            />
+            <h2 class="client-h2-paragraph h2-general" style="margin-top: 3px">
+              AFOLAKE OLAORE
+            </h2>
+            <p class="client-h2-paragraph">Photoshop</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-colom">
+        <div>
+          <div class="client-div">
+            <img
+              class="client-logos"
+              src="pictures/organization.svg"
+              alt="clients-logos"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit leo quis
+              ullamcorper quis id elementum convallis lacus gravida.
+            </p>
+          </div>
+
+          <div class="client-img-paragraph">
+            <img
+              class="clients-image"
+              src="pictures/yemi 2x2.jpg"
+              alt="client"
+            />
+            <h2 class="client-h2-paragraph h2-general" style="margin-top: 3px">
+              OMOTOYOSI OLUWAYEMISI
+            </h2>
+            <p class="client-h2-paragraph">Web Designer</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
