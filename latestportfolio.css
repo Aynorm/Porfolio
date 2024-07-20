@@ -8,6 +8,11 @@
 
       .padding-h1-in-contact {
         padding: 10px 0px 10px 0px;
+
+      .paragraph-portfolio {
+          width: 120px;
+          margin-bottom: -7px;
+        }
       }
 }
 /* On smaller screens, decrease text size */
@@ -59,7 +64,11 @@
           padding: 20px 0px 20px 0px;
         }
 
-  .h2-portfolio, .paragraph-portfolio {font-size: 20px;}
+  .h2-portfolio {font-size: 20px;}
+    .paragraph-portfolio {
+      width: 120px;
+      margin-bottom: -7px ;
+    }
   
   p, h2, h3, h1 {color: white;}
 }
@@ -209,9 +218,8 @@ p {
          }
     
          .paragraph-portfolio {
-           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-           font-size: 100%;
-           padding: 0px 10px 0px 10px;
+           max-width: 200px;
+           padding: 5px 10px 5px 10px;
          }
 
          .project-have-done {
@@ -515,7 +523,7 @@ img {
       
             .general-snippet {
               display: flex;
-              gap: 10px;
+              column-gap: 30px;
               padding: 0px 0px 50px 0px;
               justify-content: space-between;
             }
