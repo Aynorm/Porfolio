@@ -1,3 +1,13 @@
+//Background changer
+    
+    
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    
+    //Background changer
+
 //Nav js
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
