@@ -9,154 +9,209 @@
     <link rel="icon" type="" href="pictures/favicon aynorm.png" />
   </head>
   <body>
-    <div style="background-color: rgba(0, 0, 0, 0.6); padding-bottom: 50px">
-      <div
-        class="nav-color-back"
-        style="
-          display: flex;
-          align-items: center;
-          margin: 0px;
-          padding: 0px;
-          width: 100%;
-          justify-content: space-between;
-        "
-      >
+    <!--Background changer-->
+    <button onclick="myFunction()">Toggled</button>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+    <!--Background changer-->
+    <!--Side bar-->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 70px 50px 1fr;
+        align-items: center;
+        background-color: #333;
+      "
+    >
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
-          ><div
-            style="
-              display: flex;
-              align-items: center;
-              margin: 0px;
-              padding: 0px;
-            "
-          >
-            <img
-              style="min-width: 30px; width: 25%; max-width: 100px"
-              src="pictures/aynorm freelance.png"
-              alt="logo"
-            />
-            <h3 style="margin-left: 0px; padding: 0px">Aynorm</h3>
-          </div></a
+          >Home</a
         >
-        <ul class="head-ul">
-          <li class="li-row">
-            <a
-              class="link"
-              href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
-              >Home</a
-            >
-          </li>
-          <li class="li-row">
-            <a class="link" href="/Porfolio/about">About</a>
-          </li>
-          <li class="li-row">
-            <a class="link" href="/Porfolio/portfolio">Portfolio</a>
-          </li>
-          <li class="li-row"><a class="link" href="#">Blog</a></li>
-          <li class="li-row"><a class="link" href="#">Page</a></li>
-          <li class="li-row">
-            <a
-              style="display: flex; color: orange"
-              class="link"
-              href="/Porfolio/hire-me"
-              ><span>Hire</span> me</a
-            >
-          </li>
-        </ul>
+        <a href="/Porfolio/portfolio">Portfolio</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="/Porfolio/about">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="/Porfolio/hire-me">Hire me</a>
+        <div class="button-div">
+          <a href="#"><button class="log-in">Log in</button></a>
+          <a href="#"> <button class="sign-up">Sign up</button></a>
+        </div>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
       </div>
 
-      <br />
+      <div style="width: 45px">
+        <a class="logo-icon" href=""
+          ><img
+            style="width: 40px; margin-bottom: -15px"
+            src="pictures/aynorm freelance.png"
+            alt="logo"
+          />AYNORM</a
+        >
+      </div>
 
-      <div class="white-top" style="margin-bottom: 5px"></div>
+      <div class="general-topbar">
+        <div class="topnav">
+          <a href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
+            >Home</a
+          >
+          <a href="/Porfolio/about">About</a>
+          <a href="/Porfolio/portfolio">Portfolio</a>
+          <a href="">Blog</a>
+          <a href="/Porfolio/hire-me">Hire me</a>
+        </div>
+        <div class="button-div">
+          <a href="#"><button class="log-in">Log in</button></a>
+          <a href="#"> <button class="sign-up">Sign up</button></a>
+        </div>
+      </div>
+    </div>
+    <!--side bar to top-->
 
-      <div
-        class="background-img"
-        style="display: flex; gap: 5px; flex-wrap: wrap"
+    <!--
+    <div
+      class="nav-color-back"
+      style="
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        justify-content: space-between;
+      "
+    >
+      <a href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
+        ><div
+          style="display: flex; align-items: center; margin: 0px; padding: 0px"
+        >
+          <img
+            style="min-width: 30px; width: 25%; max-width: 100px"
+            src="pictures/aynorm freelance.png"
+            alt="logo"
+          />
+          <h3 style="margin-left: 0px; padding: 0px">Aynorm</h3>
+        </div></a
       >
-        <div class="test glass-background" style="width: 100%; height: 100%">
-          <div></div>
-          <h1 class="intro aynorm">I’m Aynorm, a Web Developer</h1>
-          <p>
-            A Result-Oriented Web Developer building and managing Websites and
-            Web Applications that leads to the success of the overall product
-          </p>
-        </div>
+      <ul class="head-ul">
+        <li class="li-row">
+          <a
+            class="link"
+            href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
+            >Home</a
+          >
+        </li>
+        <li class="li-row">
+          <a class="link" href="/Porfolio/about">About</a>
+        </li>
+        <li class="li-row">
+          <a class="link" href="/Porfolio/portfolio">Portfolio</a>
+        </li>
+        <li class="li-row"><a class="link" href="#">Blog</a></li>
+        <li class="li-row"><a class="link" href="#">Page</a></li>
+        <li class="li-row">
+          <a
+            style="display: flex; color: orange"
+            class="link"
+            href="/Porfolio/hire-me"
+            ><span>Hire</span> me</a
+          >
+        </li>
+      </ul>
+    </div>-->
 
-        <div class="test glass-background change">
-          <h3 class="f-mobile">ABOUT ME</h3>
-          <p>
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
-          </p>
-          <a class="learn-portfolio" href="#"
-            >LEARN MORE <span class="right-arrow"> &rarr;</span></a
-          >
-        </div>
-        <div class="test glass-background change">
-          <h3 class="f-mobile">MY WORK</h3>
-          <p>
-            Here you will find some of the personal and clients projects that I
-            created with each project containing its own case study
-          </p>
-          <a class="learn-portfolio" href="#"
-            >BROWSE PORTFOLIO <span class="right-arrow"> &rarr;</span></a
-          >
-        </div>
-        <div style="padding-bottom: 62px" class="test glass-background change">
-          <h3 class="f-mobile">FOLLOW ME</h3>
-          <ul style="display: flex; gap: 5px; margin-left: -45px">
-            <li>
-              <a href="https://www.facebook.com/taleeb.ayobami1"
-                ><img
-                  class="img-li"
-                  src="pictures/7.facebook.png"
-                  alt="Facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="https://x.com/taleeb_ayobami"
-                ><img class="img-li" src="pictures/9.twitter.png" alt="X"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/aynorms/"
-                ><img
-                  class="img-li"
-                  src="pictures/8.instagram.png"
-                  alt="Instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/taleeb-ayobami-90a450164/"
-                ><img
-                  class="img-li"
-                  src="pictures/11.linkedin.png"
-                  alt="Linkedin"
-              /></a>
-            </li>
-            <li>
-              <a href="https://youtube.com/Aynorm"
-                ><img
-                  class="img-li"
-                  src="pictures/12.youtube.png"
-                  alt="Youtube"
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/Aynorm"
-                ><img class="img-li" src="pictures/14.github.png" alt="Github"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.freelancer.com/u/AYNORMPHOTOGRAPY"
-                ><img
-                  class="img-li"
-                  src="pictures/13.freelancer.png"
-                  alt="freelancer"
-              /></a>
-            </li>
-          </ul>
-        </div>
+    <br />
+
+    <div class="white-top" style="margin-bottom: 5px"></div>
+
+    <div
+      class="background-img"
+      style="display: flex; gap: 5px; flex-wrap: wrap"
+    >
+      <div class="test glass-background" style="width: 100%; height: 100%">
+        <div></div>
+        <h1 class="intro aynorm">I’m Aynorm, a Web Developer</h1>
+        <p>
+          A Result-Oriented Web Developer building and managing Websites and Web
+          Applications that leads to the success of the overall product
+        </p>
+      </div>
+
+      <div class="test glass-background change">
+        <h3 class="f-mobile">ABOUT ME</h3>
+        <p>
+          Here you will find more information about me, what I do, and my
+          current skills mostly in terms of programming and technology
+        </p>
+        <a class="learn-portfolio" href="#"
+          >LEARN MORE <span class="right-arrow"> &rarr;</span></a
+        >
+      </div>
+      <div class="test glass-background change">
+        <h3 class="f-mobile">MY WORK</h3>
+        <p>
+          Here you will find some of the personal and clients projects that I
+          created with each project containing its own case study
+        </p>
+        <a class="learn-portfolio" href="#"
+          >BROWSE PORTFOLIO <span class="right-arrow"> &rarr;</span></a
+        >
+      </div>
+      <div style="padding-bottom: 62px" class="test glass-background change">
+        <h3 class="f-mobile">FOLLOW ME</h3>
+        <ul style="display: flex; gap: 5px; margin-left: -45px">
+          <li>
+            <a href="https://www.facebook.com/taleeb.ayobami1"
+              ><img class="img-li" src="pictures/7.facebook.png" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://x.com/taleeb_ayobami"
+              ><img class="img-li" src="pictures/9.twitter.png" alt="X"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/aynorms/"
+              ><img
+                class="img-li"
+                src="pictures/8.instagram.png"
+                alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/taleeb-ayobami-90a450164/"
+              ><img
+                class="img-li"
+                src="pictures/11.linkedin.png"
+                alt="Linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="https://youtube.com/Aynorm"
+              ><img class="img-li" src="pictures/12.youtube.png" alt="Youtube"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/Aynorm"
+              ><img class="img-li" src="pictures/14.github.png" alt="Github"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.freelancer.com/u/AYNORMPHOTOGRAPY"
+              ><img
+                class="img-li"
+                src="pictures/13.freelancer.png"
+                alt="freelancer"
+            /></a>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -878,5 +933,6 @@
         </div>
       </div>
     </footer>
+    <script src="latestportfolio.js"></script>
   </body>
 </html>

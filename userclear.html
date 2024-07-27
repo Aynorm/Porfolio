@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Clear</title>
+    <link rel="stylesheet" href="userclear.css" />
+    <link rel="stylesheet" href="userclear.js" />
+  </head>
+  <body>
+    <!--Side bar-->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 70px 50px 1fr;
+        align-items: center;
+        background-color: #333;
+      "
+    >
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Buy</a>
+        <a href="#">Sell</a>
+        <a href="#">Rent</a>
+        <a href="#">Mortage</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <div class="button-div">
+          <a href="#"><button class="log-in">Log in</button></a>
+          <a href="#"> <button class="sign-up">Sign up</button></a>
+        </div>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+
+      <div style="width: 45px">
+        <a class="logo-icon" href=""
+          ><img
+            style="width: 40px; margin-bottom: -15px"
+            src="pictures/aynorm freelance.png"
+            alt="logo"
+          />AYNORM</a
+        >
+      </div>
+
+      <div class="general-topbar">
+        <div class="topnav">
+          <a href="">Home</a>
+          <a href="">Buy</a>
+          <a href="">Sell</a>
+          <a href="">Rent</a>
+          <a href="">Mortage</a>
+        </div>
+        <div class="button-div">
+          <a href="#"><button class="log-in">Log in</button></a>
+          <a href="#"> <button class="sign-up">Sign up</button></a>
+        </div>
+      </div>
+    </div>
+    <!--side bar to top-->
+    <script src="userclear.js"></script>
+  </body>
+</html>
