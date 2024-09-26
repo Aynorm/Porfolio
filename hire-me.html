@@ -58,7 +58,7 @@
         background-color: rgba(11, 28, 54, 0.2);
       }
       .hire-me {
-        background-color: #2d343f;
+        background-color: hsl(217, 17%, 21%, 0.4);
         width: 100%;
         width: 350px;
         border-radius: 20px;
@@ -91,55 +91,95 @@
     </style>
   </head>
   <body>
+    <!--Side bar-->
     <div
-      class="nav-color-back"
       style="
-        display: flex;
+        display: grid;
+        grid-template-columns: 70px 1fr 2fr 30px;
         align-items: center;
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        justify-content: space-between;
+        background-color: hsl(0, 0%, 100%, 0.1);
+        border-radius: 10px;
       "
     >
-      <a href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
-        ><div
-          style="display: flex; align-items: center; margin: 0px; padding: 0px"
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
+          >Home</a
         >
-          <img
-            style="min-width: 30px; width: 25%; max-width: 100px"
+        <a href="/Porfolio/portfolio">Portfolio</a>
+        <a href="#">Blog</a>
+        <a href="/Porfolio/about">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="/Porfolio/contact">Contact</a>
+        <a href="/Porfolio/hire-me">Hire me</a>
+        <!-- <div>
+          <a href="#"
+            ><button style="width: 100%" class="log-in">Log in</button></a
+          >
+          <a href="/Porfolio/hire-me">
+            <button style="width: 100%" class="sign-up">Hire Me</button></a
+          >
+        </div> -->
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
+
+      <div style="width: 45px; margin-left: 5px; margin-bottom: 15px">
+        <a class="logo-icon" href="#"
+          ><img
+            style="width: 45px; margin-bottom: -16px"
             src="pictures/aynorm freelance.png"
             alt="logo"
-          />
-          <h3 style="margin-left: 0px; padding: 0px">Aynorm</h3>
-        </div></a
-      >
-      <ul class="head-ul">
-        <li class="li-row">
-          <a
-            class="link"
-            href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
+          />AYNORM</a
+        >
+      </div>
+
+      <div class="general-topbar">
+        <div class="topnav">
+          <a href="https://aynorm.github.io/Porfolio/latestportfolio.html#"
             >Home</a
           >
-        </li>
-        <li class="li-row">
-          <a class="link" href="/Porfolio/about">About</a>
-        </li>
-        <li class="li-row">
-          <a class="link" href="/Porfolio/portfolio">Portfolio</a>
-        </li>
-        <li class="li-row"><a class="link" href="#">Blog</a></li>
-        <li class="li-row"><a class="link" href="#">Page</a></li>
-        <li class="li-row">
-          <a
-            style="display: flex; color: orange"
-            class="link"
-            href="/Porfolio/hire-me"
-            ><span>Hire</span> me</a
+          <a href="/Porfolio/about">About</a>
+          <a href="/Porfolio/portfolio">Portfolio</a>
+          <a href="">Blog</a>
+          <a href="/Porfolio/hire-me">Services</a>
+        </div>
+        <div class="button-div">
+          <!-- <a href="#"><button class="log-in">Log in</button></a> -->
+          <a href="/Porfolio/hire-me">
+            <button class="sign-up">Hire Me</button></a
           >
-        </li>
-      </ul>
+        </div>
+      </div>
+      <div style="margin-left: -10px; padding: 0px">
+        <button
+          style="background-color: transparent; border: none; padding: 10p"
+          onclick="myFunction()"
+        >
+          <label class="mode-swich-label" for="mode-switch-radio">
+            <span class="sw-before">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22.22"
+                height="22.313"
+                viewBox="0 0 22.22 22.313"
+              >
+                <path
+                  id="Light_Theme"
+                  data-name="Light Theme"
+                  fill="#fff"
+                  d="M1752.49,105.511a5.589,5.589,0,0,0-3.94-1.655,5.466,5.466,0,0,0-3.94,1.655,5.61,5.61,0,0,0,3.94,9.566,5.473,5.473,0,0,0,3.94-1.653,5.643,5.643,0,0,0,1.65-3.957A5.516,5.516,0,0,0,1752.49,105.511Zm-1.06,6.85a4.1,4.1,0,0,1-5.76,0,4.164,4.164,0,0,1,0-5.788A4.083,4.083,0,0,1,1751.43,112.361Zm7.47-3.662h-2.27a0.768,0.768,0,0,0,0,1.536h2.27A0.768,0.768,0,0,0,1758.9,108.7Zm-10.35,8.12a0.777,0.777,0,0,0-.76.769v2.274a0.777,0.777,0,0,0,.76.767,0.786,0.786,0,0,0,.77-0.767v-2.274A0.786,0.786,0,0,0,1748.55,116.819Zm7.85-.531-1.62-1.624a0.745,0.745,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.625a0.747,0.747,0,0,0,1.06,0A0.759,0.759,0,0,0,1756.4,116.288ZM1748.55,98.3a0.777,0.777,0,0,0-.76.768v2.273a0.778,0.778,0,0,0,.76.768,0.787,0.787,0,0,0,.77-0.768V99.073A0.786,0.786,0,0,0,1748.55,98.3Zm7.88,3.278a0.744,0.744,0,0,0-1.06,0l-1.62,1.624a0.758,0.758,0,0,0,0,1.063,0.745,0.745,0,0,0,1.06,0l1.62-1.624A0.758,0.758,0,0,0,1756.43,101.583Zm-15.96,7.116h-2.26a0.78,0.78,0,0,0-.77.768,0.76,0.76,0,0,0,.77.768h2.26A0.768,0.768,0,0,0,1740.47,108.7Zm2.88,5.965a0.745,0.745,0,0,0-1.06,0l-1.62,1.624a0.759,0.759,0,0,0,0,1.064,0.747,0.747,0,0,0,1.06,0l1.62-1.625A0.758,0.758,0,0,0,1743.35,114.664Zm0-11.457-1.62-1.624a0.744,0.744,0,0,0-1.06,0,0.758,0.758,0,0,0,0,1.063l1.62,1.624a0.745,0.745,0,0,0,1.06,0A0.758,0.758,0,0,0,1743.35,103.207Z"
+                  transform="translate(-1737.44 -98.313)"
+                ></path>
+              </svg>
+            </span>
+          </label>
+        </button>
+      </div>
     </div>
+    <!--side bar to top-->
 
     <br />
     <div
@@ -188,7 +228,7 @@
         <p>LEARN MORE<span class="right-arrow"> →</span></p>
       </div>
 
-      <div class="hire-me" style="border: 2px solid rgb(4, 157, 252)">
+      <div class="hire-me" style="border: 2px solid hsl(203, 98%, 50%, 0.5)">
         <div
           style="
             display: flex;
